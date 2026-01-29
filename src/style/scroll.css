@@ -1,0 +1,22 @@
+/* 전체 스크롤바 스타일 */
+::-webkit-scrollbar {
+    width: 4px;  /* 가로 스크롤바의 두께 */
+    height: 4px; /* 세로 스크롤바의 두께 */
+  }
+  
+  /* 스크롤바의 트랙 (배경) */
+  ::-webkit-scrollbar-track {
+    background:#f7f7f7;  /* 배경 색 */
+  }
+  
+  /* 스크롤바의 핸들 (슬라이더) */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(26, 26, 26, 0.527);      /* 핸들의 색 */
+    border-radius: 4px;    /* 핸들의 모서리를 둥글게 */
+  }
+  
+  /* 핸들에 마우스를 올렸을 때 */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;      /* 마우스를 올렸을 때 핸들의 색 */
+  }
+  

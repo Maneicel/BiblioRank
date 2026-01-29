@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-use-select: none;
+    user-select: none;
+}
+
+#IndexC {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #f7f7f7;
+}
+
+.edgeC {
+    width: 100px;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.edgeC>img {
+    margin: auto;
+}
+
+.edgeC:hover {
+    background-color: rgba(216, 216, 216, 0.5);
+}
+
+/* 'hidden' 클래스를 사용하여 화살표를 보이지 않게 하지만 공간은 유지 */
+.hidden {
+    visibility: hidden;
+}
+
+.midC {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.indexBookC {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.pageInfo {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.BookC {
+    width: 270px;
+    height: 350px;
+    margin: 10px;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px #c4c4c4;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+}
+
+.BookC:hover {
+    transform: translateY(-5px);
+}
+
+.ZeroResult {
+    margin: auto;
+    font-size: 20px;
+    font-weight: 600;
+    color: #919191;
+}
+
