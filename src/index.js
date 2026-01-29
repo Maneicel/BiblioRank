@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+import BookSub from './page/bookSub';
+import BookResult from './page/bookResult';
+import Header from './page/Header';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+
+        <Route index element={<BookResult/>}/>
+        <Route path="/book_sub" element={<BookSub/>}/>
+
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
