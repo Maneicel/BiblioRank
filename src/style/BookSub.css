@@ -22,7 +22,7 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #f7f7f7; /* 브라우저 기본 배경 색상 */
+    background-color: #f7f7f7; 
 }
 
 #BookSubC {
@@ -67,10 +67,10 @@ html, body {
     padding: 25px;
     background: 
         linear-gradient(to bottom, transparent calc(100% - 1px), #cacaca calc(100% - 1px)) repeat-y;
-    background-size: 100% 2em; /* 각 줄의 간격 설정 (2em마다 밑줄) */
+    background-size: 100% 2em; 
     font-family: "Arial", sans-serif;
     font-size: 1em;
-    line-height: 2em; /* 줄 높이와 배경의 간격을 맞춤 */
+    line-height: 2em; 
     position: relative;
     color: #333;
 }
@@ -82,7 +82,7 @@ html, body {
 
 #BookNoteR > #BookNoteR1 {
     margin: 0;
-    padding-top: 6px; /* 텍스트를 살짝 안쪽으로 들여쓰기 */
+    padding-top: 6px; 
     display: inline-block;
 }
 
