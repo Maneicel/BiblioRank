@@ -36,7 +36,6 @@ body{
     background-color: rgba(216, 216, 216, 0.5);
 }
 
-/* 'hidden' 클래스를 사용하여 화살표를 보이지 않게 하지만 공간은 유지 */
 .hidden {
     visibility: hidden;
 }
