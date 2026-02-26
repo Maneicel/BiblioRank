@@ -14,7 +14,7 @@ export default function BookResult() {
 
     useEffect(() => {
         axios
-            .get("https://openapi.gg.go.kr/Poplitloanbook?KEY=fb93f67c066c4f1aae3a8cf7080726bd&Type=json&pSize=50")
+            .get("*api 링크*")
             .then((res) => {
                 const bookData = res.data.Poplitloanbook[1].row; // row 배열 가져오기
                 saveBooksToFirestore(bookData); // Firestore에 각 책 데이터 저장
