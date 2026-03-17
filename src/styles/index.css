@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-use-select: none;
+    user-select: none;
+}
+
+#IndexC {
+    width: 100%;
+    display: flex;
+    background-color: #f7f7f7;
+    min-height: calc(100vh - 75px); /* 추가 */
+}
+
+.edgeC {
+    width: 100px;
+    align-self: stretch;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.edgeC>img {
+    margin: auto;
+}
+
+.edgeC:hover {
+    background-color: rgba(216, 216, 216, 0.5);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.midC {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 추가 */
+    min-height: calc(100vh - 75px); /* 추가 */
+}
+
+.indexBookC {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-content: flex-start;
+}
+
+.pageInfo {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 30px; /* 추가 */
+}
+
+.BookC {
+    width: 270px;
+    height: 350px;
+    margin: 40px 10px 10px 10px;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px #c4c4c4;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    /* 애니메이션 초기 상태 */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: bookFadeIn 0.4s ease forwards;
+}
+
+@keyframes bookFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.BookC:hover {
+    transform: translateY(-5px);
+}
+
+.ZeroResult {
+    margin: auto;
+    font-size: 20px;
+    font-weight: 600;
+    color: #919191;
+}
+
+/* 별 버튼 */
+.fav-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  color: #aaa;
+  transition: color 0.15s, background 0.15s;
+  z-index: 1;
+}
+
+.fav-btn:hover {
+  background: #ffffff;
+  color: #f0b429;
+}
+
+.fav-btn.active {
+  color: #f0b429;
+  background: #ffffff;
+}

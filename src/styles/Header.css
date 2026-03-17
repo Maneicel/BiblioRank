@@ -1,0 +1,95 @@
+#HC {
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #292929;
+    position: relative;
+}
+
+#SearchC {
+    width: 50%;
+    height: 50px;
+
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    justify-content: end;
+
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+#SearchC > input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+#SearchC > img {
+
+}
+
+#HC_UserIcon, #HC_HomeIcon {
+    display: flex;
+    margin: 10px 30px 10px 0px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+/* 유저 아이콘 + 드롭다운 감싸는 wrapper */
+#HC_UserWrap {
+    position: relative;
+}
+
+/* 드롭다운 */
+#HC_Dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 30px;
+    background: #ffffff;
+    border: 1px solid rgba(45, 45, 45, 0.12);
+    border-radius: 3px;
+    box-shadow: 2px 4px 12px rgba(45, 45, 45, 0.12);
+    overflow: hidden;
+    z-index: 100;
+    min-width: 110px;
+
+    animation: dropIn 0.15s ease both;
+}
+
+@keyframes dropIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* 드롭다운 항목 */
+.HC_DropItem {
+    padding: 0.65rem 1rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    color: #2d2d2d;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.HC_DropItem:hover {
+    background: #f5f4f2;
+}
+
+/* 로그아웃 항목 */
+.HC_DropLogout {
+    color: #b94040;
+    border-top: 1px solid rgba(45, 45, 45, 0.08);
+}
