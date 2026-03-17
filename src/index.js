@@ -6,7 +6,7 @@ import BookSub from './pages/BookSub';
 import Header from './pages/Header';
 import UserMain from './pages/UserMain';
 import SignUpCard from './pages/login/SignUpCard';
-import BookResult from './pages/bookResult';
+import BookResult from './pages/BookResult';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
