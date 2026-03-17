@@ -44,13 +44,12 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* 추가 */
-    min-height: calc(100vh - 75px); /* 추가 */
+    justify-content: space-between;
 }
 
 .indexBookC {
     width: 100%;
-    height: 800px;  /* 2줄 딱 맞게 고정 */
+    height: 800px; 
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
