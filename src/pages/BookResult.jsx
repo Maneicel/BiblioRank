@@ -5,6 +5,7 @@ import { doc, setDoc, deleteDoc, collection, getDocs } from "firebase/firestore"
 import { onAuthStateChanged } from "firebase/auth";
 import { db, auth } from "../firebase";
 import Header from "./Header";
+import { BOOK_API_URL } from "../api";
 import "../styles/index.css";
 
 export default function BookResult() {
@@ -17,7 +18,7 @@ export default function BookResult() {
     // API에서 직접 책 데이터 불러오기
     useEffect(() => {
         axios
-            .get(`https://openapi.gg.go.kr/Poplitloanbook?KEY=fb93f67c066c4f1aae3a8cf7080726bd&Type=json`)
+            .get(BOOK_API_URL)
             .then((res) => {
                 setBook(res.data.Poplitloanbook[1].row);
             })
