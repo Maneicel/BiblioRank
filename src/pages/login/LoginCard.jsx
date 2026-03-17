@@ -6,6 +6,7 @@ import {
 } from "firebase/auth";
 import { auth } from "../../firebase";
 import "../../styles/LoginCard.css";
+import "../../styles/basic.css";
 import { Link } from "react-router-dom";
 
 export default function LoginCard() {

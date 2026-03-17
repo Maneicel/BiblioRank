@@ -50,8 +50,7 @@ body{
 
 .indexBookC {
     width: 100%;
-    height: fit-content;
-
+    height: 800px;  /* 2줄 딱 맞게 고정 */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import "../../styles/SignUpCard.css";
+import "../../styles/basic.css";
 import Header from "../Header";
 
 export default function SignupCard() {

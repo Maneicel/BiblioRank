@@ -6,7 +6,9 @@ import { onAuthStateChanged } from "firebase/auth";
 import { db, auth } from "../firebase";
 import Header from "./Header";
 import { BOOK_API_URL } from "../api";
+
 import "../styles/index.css";
+import "../styles/basic.css";
 
 export default function BookResult() {
     const [book, setBook] = useState([]);
@@ -95,7 +97,7 @@ export default function BookResult() {
         <>
             <Header onSearch={handleSearch} />
 
-            <div id="IndexC">
+            <div id="IndexC" className="nb-root">
                 <div className={`edgeC ${currentPage === 0 ? "hidden" : ""}`} onClick={goToPreviousPage}>
                     <img src="/img/arrowL.webp" alt="previous" />
                 </div>
