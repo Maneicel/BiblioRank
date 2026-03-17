@@ -29,7 +29,7 @@ export default function SignupCard() {
     setLoading(true);
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      navigate("/user_main"); // 마이페이지 경로로 이동
+      navigate("/user_main"); 
     } catch (err) {
       if (err.code === "auth/email-already-in-use") {
         setError("이미 사용 중인 이메일입니다.");

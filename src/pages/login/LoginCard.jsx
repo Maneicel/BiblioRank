@@ -40,7 +40,6 @@ export default function LoginCard() {
     <div className="nb-root">
       <div className="nb-card">
 
-        {/* 헤더 */}
         <div className="nb-header">
           <p className="nb-label">sign in</p>
           <h1 className="nb-title">로그인</h1>
@@ -51,7 +50,6 @@ export default function LoginCard() {
           </div>
         </div>
 
-        {/* 본문 */}
         <div className="nb-body">
           <form onSubmit={handleLogin}>
             <div className="nb-form-group">
@@ -111,7 +109,6 @@ export default function LoginCard() {
           </p>
         </div>
 
-        {/* 하단 */}
         <div className="nb-footer">
           <span className="nb-page">로그인</span>
           <span className="nb-page">p. 01</span>
