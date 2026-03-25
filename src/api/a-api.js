@@ -1,0 +1,1 @@
+BOOK_API_URL = `https://openapi.gg.go.kr/Poplitloanbook?KEY=fb93f67c066c4f1aae3a8cf7080726bd&Type=json`;

@@ -23,6 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 #api
-src/api/*
-.env
+src/api.js
+src/firebase.js
 
