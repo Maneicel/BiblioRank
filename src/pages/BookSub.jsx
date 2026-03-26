@@ -32,7 +32,6 @@ export default function BookSub() {
                 <div className="BookSubPreBTN">
                     <Link to="/">
                         <img src="/img/arrowL.webp" alt="previous" />
-                        {/* <p id="BookSubPreTxt">뒤로가기</p> */}
                     </Link>
                 </div>
             </div>
@@ -50,7 +49,7 @@ export default function BookSub() {
                         <p id="BookNoteR3"><br/>{normalizeAuthor(book.AUTHOR_NM_INFO)}이(가) 작성한 이 책은</p>
                         <p id="BookNoteR4">{book.PUBLSHCMPY_NM}에서 출판되었다.</p>
 
-                        <p id="BookNoteR2"><br/>[{book.RKI_NO}]번째로 많이 대출되고 있는 책!</p>
+                        <p id="BookNoteR2"><br/>[{book.RKI_NO}]번째로 많이 대출되고 있는 책이다.</p>
                     </div>
 
                 </div>
