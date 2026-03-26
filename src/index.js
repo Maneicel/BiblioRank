@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import BookSub from './pages/BookSub';
-import Header from './pages/Header';
 import UserMain from './pages/UserMain';
 import SignUpCard from './pages/login/SignUpCard';
 import BookResult from './pages/BookResult';
